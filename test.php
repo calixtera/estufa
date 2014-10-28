@@ -11,15 +11,10 @@
 	echo "Base de dados selecionada! <br/>";
 
 	$result = mysql_query("SELECT * FROM temperatura");
-	if ($result->num_rows > 0) {
-    // output data of each row
-    		while($row = $result->fetch_assoc()) {
-        		echo "<br> id: ". $row["id"]. " - Name: ". $row["firstname"]. " " . $row["lastname"];
-   	 }
-}	 else {
-    echo "0 results";
-}
-	echo $result;
+         // output data of each row
+  	while($row = mysql_fetch_array($result)) {
+            echo "<br> id: ". $row["idTemperatura"]. " - data: ". $row["data/hora"]. " " . $row["valorTemperatura"];
+	}
 ?>
 
 
