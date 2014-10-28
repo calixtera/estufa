@@ -3,7 +3,7 @@ var chart = c3.generate({
     data: {
 	    x: 'data',
 	    xFormat: '%Y-%m-%d %H:%M:%S',
-        url: '/app/getCSVTemperatura.php',
+        url: 'app/getCSVTemperatura.php',
         mimeType: 'csv'
     },
     axis: {
