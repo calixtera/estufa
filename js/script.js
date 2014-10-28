@@ -15,22 +15,40 @@ var chart = c3.generate({
         }
     }
 });
-/*
-chart.load({
-    url: 'app/getCSV.php?table=temperatura',
-    mimeType: 'csv'
-});
-*/
+setTimeout(function() {
+	chart.load({
+	    url: 'app/getCSV.php?table=temperatura',
+	    mimeType: 'csv'
+	});
+}, 700);
 setTimeout(function() {
 	chart.load({
     	url: 'app/getCSV.php?table=condutividade',
     	mimeType: 'csv'
 	});
-}, 700);
+}, 1400);
 setTimeout(function() {
 	chart.load({
     	url: 'app/getCSV.php?table=vazao',
     	mimeType: 'csv'
 	});
-}, 1400);
+}, 2800);
+setTimeout(function() {
+	chart.load({
+    	url: 'app/getCSV.php?table=energia',
+    	mimeType: 'csv'
+	});
+}, 3500);
+setTimeout(function() {
+	chart.load({
+    	url: 'app/getCSV.php?table=iluminacao',
+    	mimeType: 'csv'
+	});
+}, 4200);
+setTimeout(function() {
+	chart.load({
+    	url: 'app/getCSV.php?table=ph',
+    	mimeType: 'csv'
+	});
+}, 4900);
 
