@@ -15,18 +15,21 @@ var chart = c3.generate({
         }
     }
 });
+
 setTimeout(function() {
 	chart.load({
 	    url: 'app/getCSV.php?table=temperatura',
 	    mimeType: 'csv'
 	});
 }, 700);
+
 setTimeout(function() {
 	chart.load({
     	url: 'app/getCSV.php?table=condutividade',
     	mimeType: 'csv'
 	});
 }, 1400);
+
 setTimeout(function() {
 	chart.load({
     	url: 'app/getCSV.php?table=vazao',
@@ -51,4 +54,14 @@ setTimeout(function() {
     	mimeType: 'csv'
 	});
 }, 4900);
+setTimeout(function() {
+	chart.load({
+    	url: 'app/getCSV.php?table=ph',
+    	mimeType: 'csv'
+	});
+}, 4900);
+setTimeout(function() {
+	
+}, 6000);
+
 
