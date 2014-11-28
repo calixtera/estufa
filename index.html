@@ -12,7 +12,7 @@
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
   <link rel="stylesheet" href="js/c3-0.3.0/c3.css">
-  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -25,55 +25,74 @@
   <script src="js/c3-0.3.0/c3.min.js"></script>
   <script src="js/script.js"></script>
   
-  <h1>Projeto Estufa</h1>
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Projeto Estufa</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/index.html">Dashboard</a></li>
+          <li><a href="/sobre">Sobre</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
   
-  <h2>Grafico</h2>
-  <div id="grafico"></div>
-  
-  <h2>Painel</h2>
-  
-  <div class="dashboard panel condutividade">
-    <h3>condutividade</h3>
-    <span class="value"></span>
-    <span class="date"></span>
-  </div>
-  
-  <div class="dashboard panel energia">
-    <h3>energia</h3>
-    <span class="value"></span>
-    <span class="date"></span>
-  </div>
-  
-  <div class="dashboard panel iluminacao">
-    <h3>iluminação</h3>
-    <span class="value"></span>
-    <span class="date"></span>
-  </div>
-  
-  <div class="dashboard panel ph">
-    <h3>ph</h3>
-    <span class="value"></span>
-    <span class="date"></span>
-  </div>
-  
-  <div class="dashboard panel temperatura">
-    <h3>temperatura</h3>
-    <span class="value"></span>
-    <span class="date"></span>
-  </div>
-  
-  <div class="dashboard panel humidade">
-    <h3>umidade</h3>
-    <span class="value"></span>
-    <span class="date"></span>
-  </div>
-  
-  <div class="dashboard panel vazao">
-    <h3>vazão</h3>
-    <span class="value"></span>
-    <span class="date"></span>
-  </div>
-  
+  <div class="container">
+    <h2>Grafico</h2>
+    <div id="grafico"></div>
+    
+    <h2>Painel</h2>
+    
+    <div class="dashboard panel condutividade">
+      <h3>condutividade</h3>
+      <span class="value"></span>
+      <span class="date"></span>
+    </div>
+    
+    <div class="dashboard panel energia">
+      <h3>energia</h3>
+      <span class="value"></span>
+      <span class="date"></span>
+    </div>
+    
+    <div class="dashboard panel iluminacao">
+      <h3>iluminação</h3>
+      <span class="value"></span>
+      <span class="date"></span>
+    </div>
+    
+    <div class="dashboard panel ph">
+      <h3>ph</h3>
+      <span class="value"></span>
+      <span class="date"></span>
+    </div>
+    
+    <div class="dashboard panel temperatura">
+      <h3>temperatura</h3>
+      <span class="value"></span>
+      <span class="date"></span>
+    </div>
+    
+    <div class="dashboard panel umidade">
+      <h3>umidade</h3>
+      <span class="value"></span>
+      <span class="date"></span>
+    </div>
+    
+    <div class="dashboard panel vazao">
+      <h3>vazão</h3>
+      <span class="value"></span>
+      <span class="date"></span>
+    </div>
+  <div class="container">
   
   
   
