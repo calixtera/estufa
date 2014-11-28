@@ -60,8 +60,11 @@ setTimeout(function() {
     	mimeType: 'csv'
 	});
 }, 4900);
-setTimeout(function() {
-	
-}, 6000);
 
+//load current value grip
+
+setTimeout(function() {
+	alert(body);
+	
+}, 5500);
 
