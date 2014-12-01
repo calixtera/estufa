@@ -24,6 +24,9 @@ var chart = c3.generate({
                 format: '%Y-%m-%d %H:%M:%S'
             }
         }
+    },
+    subchart: {
+        show: true
     }
 });
 
