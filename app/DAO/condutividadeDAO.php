@@ -14,7 +14,7 @@ function condutividade (){
 $servidor = 'localhost';
 $banco      = 'projeto_estufa';
 $usuario  = 'root'; //alterar
-$senha    = ''; // alterar
+$senha    = 'root'; // alterar
 $link     = mysql_connect($servidor, $usuario, $senha);
 $db          = mysql_select_db($banco,$link);
 
@@ -22,7 +22,7 @@ $date=new DateTime(); //this returns the current date time
 $result = $date->format('Y-m-d-H-i-s');
 // Obtem o conteudo do arquivo (arquivo.txt)
 
-$dados = file_get_contents('C:\Users\jads\Desktop\condutividade.txt');
+$dados = file_get_contents('condutividade.txt');
 
     if ($dados != null){
         
