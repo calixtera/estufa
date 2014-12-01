@@ -4,7 +4,7 @@ function temperatura () {
 $servidor = 'localhost';
 $banco      = 'projeto_estufa';
 $usuario  = 'root'; //alterar
-$senha    = ''; // alterar
+$senha    = 'root'; // alterar
 $link     = mysql_connect($servidor, $usuario, $senha);
 $db          = mysql_select_db($banco,$link);
 
