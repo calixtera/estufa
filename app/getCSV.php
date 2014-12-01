@@ -8,7 +8,7 @@
 	$capitalTable = ucfirst($table);
 	
 	
-	$result = mysql_query("SELECT * FROM ".$table." LIMIT 40");
+	$result = mysql_query("SELECT * FROM ".$table." ORDER BY id".$table." DESC LIMIT 40");
 	
 	echo("data, ".$table."\r\n");
 	while($row = mysql_fetch_array($result)) {
