@@ -1,6 +1,6 @@
 <?php
 
-date_default_timezone_set('America/Los_Angeles');
+date_default_timezone_set('America/Sao_Paulo');
 
 include "umidadeDAO.php";
 include "vazaoDAO.php";
