@@ -1,0 +1,22 @@
+body {
+  padding-top: 50px;
+}
+.dashboard.panel {
+  float: left;
+  width: 23%;
+  margin: 1%;
+  padding: 1%;
+  background: #dfdfdf;
+  text-align: center;
+}
+
+.dashboard.panel h3 {
+  text-transform: capitalize;
+  margin-top: 0;
+}
+
+.dashboard.panel span {
+  display: block;
+  margin-bottom: 20px;
+}
+
