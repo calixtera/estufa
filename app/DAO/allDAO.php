@@ -1,4 +1,7 @@
 <?php
+
+date_default_timezone_set('America/Los_Angeles');
+
 include "umidadeDAO.php";
 include "vazaoDAO.php";
 include "phDAO.php";
