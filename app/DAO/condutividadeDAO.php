@@ -52,7 +52,7 @@ $sql = substr($sql, 0, -1);
 
 // Executa a query, inserindo os dados.
 $resultado = mysql_query($sql) or die(mysql_error());
-$responses = $humanMultipleSend->sendMultipleList($tipo, $msg_list, 0);
+//$responses = $humanMultipleSend->sendMultipleList($tipo, $msg_list, 0);
     }
         
     else{
