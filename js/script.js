@@ -9,12 +9,13 @@ setInterval(function(){
 
   
 var chart = c3.generate({
-	bindto: '#grafico',
+    bindto: '#grafico',
     data: {
 	    x: 'data',
 	    xFormat: '%Y-%m-%d %H:%M:%S',
         url: 'app/getCSV.php?table=umidade',
-        mimeType: 'csv'
+        mimeType: 'csv',
+        type: 'spline'
     },
     axis: {
         x: {
@@ -40,7 +41,7 @@ setTimeout(function() {
 	});
 }, 600);
 
-setTimeout(function() {
+setInterval(function() {
 	chart.load({
     	url: 'app/getCSV.php?table=vazao',
     	mimeType: 'csv'
@@ -77,7 +78,7 @@ setTimeout(function() {
 	startMonitoring('condutividade');
 }, 2400);
 
-setInterval(function() {
+setTimeout(function() {
 	getLast('vazao');
 	startMonitoring('vazao');
 }, 3000);
