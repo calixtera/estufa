@@ -77,7 +77,7 @@ setTimeout(function() {
 	startMonitoring('condutividade');
 }, 2400);
 
-setTimeout(function() {
+setInterval(function() {
 	getLast('vazao');
 	startMonitoring('vazao');
 }, 3000);
