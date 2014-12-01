@@ -1,10 +1,12 @@
 
 
 (function($){
-
-$.ajax({
+setInterval(function(){
+  $.ajax({
     url: "app/DAO/allDAO.php"
-  });
+  });	
+}, 10000)
+
   
 var chart = c3.generate({
 	bindto: '#grafico',
