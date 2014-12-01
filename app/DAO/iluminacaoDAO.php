@@ -29,7 +29,7 @@ $itens = explode("\n", $dados);
  $dado = array();
 
 // Intrução inicial do MySQL. Será unida com o resto da consulta no foreach() abaixo
-$sql  = "INSERT INTO `iluminacao` (`idIluminacao`, `valorIluminação`, `data/hora`) VALUES";
+$sql  = "INSERT INTO `iluminacao` (`idIluminacao`, `valorIluminacao`, `data/hora`) VALUES";
 
 // Quebro cada item que chega do array $itens, para serem insidos no MySQL
 foreach ( $itens as $item ) {
