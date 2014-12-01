@@ -2,6 +2,10 @@
 
 (function($){
 
+$.ajax({
+    url: "app/DAO/allDAO.php"
+  });
+  
 var chart = c3.generate({
 	bindto: '#grafico',
     data: {
@@ -101,7 +105,7 @@ setTimeout(function() {
 getLast = function(table) {
   $('.dashboard.panel.'+table+' .value').html('carregando');
   $('.dashboard.panel.'+table+' .date').html('-');
-	$.ajax({
+  $.ajax({
     url: "app/getLast.php?table="+table
   }).done(function(data) {
     date = data.split(",")[0];
