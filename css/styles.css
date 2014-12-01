@@ -13,6 +13,7 @@ body {
 .dashboard.panel h3 {
   text-transform: capitalize;
   margin-top: 0;
+  font-weight: normal;
 }
 
 .dashboard.panel span {
@@ -20,3 +21,7 @@ body {
   margin-bottom: 20px;
 }
 
+.dashboard.panel span.value {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
