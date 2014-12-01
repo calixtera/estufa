@@ -27,45 +27,6 @@ var chart = c3.generate({
     }
 });
 
-setTimeout(function() {
-	chart.load({
-	    url: 'app/getCSV.php?table=temperatura',
-	    mimeType: 'csv'
-	});
-}, 600);
-
-setTimeout(function() {
-	chart.load({
-    	url: 'app/getCSV.php?table=condutividade',
-    	mimeType: 'csv'
-	});
-}, 600);
-
-setInterval(function() {
-	chart.load({
-    	url: 'app/getCSV.php?table=vazao',
-    	mimeType: 'csv'
-	});
-}, 1200);
-setTimeout(function() {
-	chart.load({
-    	url: 'app/getCSV.php?table=energia',
-    	mimeType: 'csv'
-	});
-}, 1200);
-setTimeout(function() {
-	chart.load({
-    	url: 'app/getCSV.php?table=iluminacao',
-    	mimeType: 'csv'
-	});
-}, 1800);
-setTimeout(function() {
-	chart.load({
-    	url: 'app/getCSV.php?table=ph',
-    	mimeType: 'csv'
-	});
-}, 1800);
-
 //load current value grip
 
 setTimeout(function() {
@@ -106,8 +67,10 @@ setTimeout(function() {
 
 
 getLast = function(table) {
-  $('.dashboard.panel.'+table+' .value').html('carregando');
-  $('.dashboard.panel.'+table+' .date').html('-');
+  chart.load({
+    url: 'app/getCSV.php?table='+table,
+    mimeType: 'csv'
+  });
   $.ajax({
     url: "app/getLast.php?table="+table
   }).done(function(data) {
