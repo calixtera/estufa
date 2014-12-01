@@ -14,8 +14,7 @@ var chart = c3.generate({
 	    x: 'data',
 	    xFormat: '%Y-%m-%d %H:%M:%S',
         url: 'app/getCSV.php?table=umidade',
-        mimeType: 'csv',
-        type: 'spline'
+        mimeType: 'csv'
     },
     axis: {
         x: {
